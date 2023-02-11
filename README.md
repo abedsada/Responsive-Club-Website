@@ -10,8 +10,9 @@ In this project, you’ll be building your own club group page that will dynamic
 
 ## Developer Notes:
 
-* This is a responsive website that was created using grid and flexbox and grid.
-* This is an interactive website, where javascript was introduced along with DOM events to make a SPA.
-* This is an Off-Platform Project which was edited using Visual Studio Code and Chrome DevTools.
+* This is a responsive website that was created using grid and flexbox.
+* This is an interactive website, where javascript was introduced along with DOM events to make the website a SPA.
+* This is an Off-Platform Project which was created using Visual Studio Code and Chrome DevTools.
+* https://unsplash.com was the main resource for the images.
 
 You can see the project thorugh this link: https://abedsada.github.io/
