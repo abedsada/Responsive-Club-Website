@@ -1,30 +1,29 @@
+/*
 let cover= document.getElementById("first");
-
-/*cover.querySelector('h1').innerHTML='hi';
-cover.querySelector('p').innerHTML='hi';*/
-
 let firstPic=document.getElementById("second");
-
-
 let firstText=document.getElementById("third");
-/*firstText.querySelector('h2').innerHTML='hi';
-firstText.querySelector('p').innerHTML='hi';*/
-
 let secondPic=document.getElementById("fifth");
-
 let secondText=document.getElementById("fourth");
-/*secondText.querySelector('h2').innerHTML='hi';
-secondText.querySelector('p').innerHTML='hi';*/
+*/ /*Can be used if backgroundImage style was successful*/
 
 let nextButton=document.getElementById('button');
+let backButton=document.getElementById('buttonB');
 
-/*
-document.querySelector('html').style.backgroundColor="white";*/
 
 function next(){
-    cover.querySelector('h1').innerHTML='hi';
-    cover.querySelector('p').innerHTML='hi';
-}
+    document.getElementById("bac").style.display='none';
+    document.getElementById("credit").style.display='none';
+    document.querySelector('html').style.backgroundColor="#FFC375"
+    document.getElementById("bac2").style.display='block';    
+};
+function back(){
+    document.getElementById("bac").style.display='block';
+    document.getElementById("credit").style.display='inline-block';
+    document.querySelector('html').style.backgroundColor="rgb(33, 36, 38)"
+    document.getElementById("bac2").style.display='none';    
+};
 
-/*nextButton.addEventListener("click", next);*/
 nextButton.onclick=next;
+backButton.onclick=back;
+
+/*nextButton.addEventListener("click", next);*/ /*Other Method*/
