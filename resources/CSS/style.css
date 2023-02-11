@@ -1,0 +1,297 @@
+html{
+    font-size: 16px;
+    color: black;
+    background-color: rgb(33, 36, 38);
+
+}
+
+.content h1{
+    color: #FFC375;
+    font-size: 40px;
+    margin-bottom:10%;
+}
+.content h2{
+    font-size: 35px;
+    margin-bottom:10%;
+    max-width: 95%;
+}
+.content p{
+    font-size: 18px;
+    max-width: 90%;
+}
+
+
+@media only screen and (max-width: 1168px) {
+    .content h1{
+        font-size: 28px;    
+    }
+    .content h2{
+        font-size: 25px;
+    }
+    .content p{
+        font-size: 16px;
+    }
+  }
+  @media only screen and (max-width: 425px) {
+    .content h1{
+        font-size: 23px;    
+    }
+    .content h2{
+        font-size: 20px;
+    }
+    .content p{
+        font-size: 14px;
+    }
+  }
+
+
+/*Header*/
+header{
+    width: 100%;
+    position: fixed;
+}
+header .content{
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px 0;
+}
+
+#Slogo{
+    display: block;
+    color: #4FA9DB;
+    margin-left: 1.5%;
+    font-weight: bolder;
+    font-size: 23px;
+    text-decoration: none;
+}
+
+#Slogo span{
+    color: #FFC375;
+    font-weight: lighter;
+    font-size: 16px;
+}
+
+@media only screen and (max-width: 460px){
+    #Slogo span{
+        display: none;
+    }
+    #Slogo{
+        font-size: 20px;
+    }      
+}
+
+/*First Page*/
+
+#bac{
+    min-height: 100vh;
+    padding: 5% 20%;
+    display: block;
+}
+
+/*Container*/
+#container{
+    min-height: 90vh;
+    display: grid;
+    grid-template:1.5fr 1fr 1fr/1fr 1fr 1fr;    
+    gap: 10px;    
+}
+
+/*Cover photo and title*/
+#first{
+    background-image:url('../../resources/pics/cover1.jpg');
+    background-size: cover;
+    background-position:center;
+    grid-area: 1/1/span 1/span 3;
+    opacity: 0.9;
+    display: grid;
+    grid-template: 1fr/1fr 1fr 1fr;
+    gap: 10px;    
+}
+#first .content{
+    background-color: white;
+    margin-left: 0px;
+    opacity: 0.9;
+    grid-area: 1fr/1fr/1fr/1fr;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#second{
+    background-image:url('../../resources/pics/main.jpg');
+    background-size: cover;
+    background-position:center; 
+    grid-area: 2/1/span 1/span 2;
+}
+
+#third{
+    background-color:rgb(83, 83, 83);   
+    grid-area: 2/3/span 1/span 1;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: rgb(232, 251, 225);
+}
+
+#fourth{
+    background-color:rgb(83, 83, 83);
+    grid-area: 3/1/span 1/span 1;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: rgb(232, 251, 225);
+}
+#third .content, #fourth .content{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+#fourth p{
+    font-family: "Palatino", serif;
+    font-style: italic;
+}
+
+#fifth{
+    background-image:url('../../resources/pics/Salad.jpg');
+    background-size: cover;
+    background-position:center;
+    grid-area: 3/2/span 1/span 2;
+}
+
+@media only screen and (max-width: 860px) {
+    #bac{
+        padding: 10% 10%;
+    }
+    #first{
+        grid-template: 1fr/1.5fr 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    #bac{
+        padding: 10% 5%;
+    }
+    #container{
+        grid-template:1.5fr 1fr 1fr/1fr 1fr 1fr 1fr;    
+    }
+    #first{
+        grid-template: 1fr/1fr 1fr;
+        grid-area: 1/1/span 1/span 4;
+    }
+
+    #second{
+        grid-area: 2/1/span 1/span 2;
+    }
+
+    #third{
+        grid-area: 2/3/span 1/span 2;
+    }
+    #fourth{
+        grid-area: 3/1/span 1/span 2;
+    }
+    #fifth{
+        grid-area: 3/3/span 1/span 2;
+    }
+}
+/*Next Button*/
+#button{
+    margin-top: 1%;
+    background-color: rgb(83, 83, 83);
+    width: 50px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#button a{
+    text-decoration: none;
+    color: rgb(232, 251, 225);
+} 
+#button:hover{
+    background-color: rgb(54, 53, 53);
+}
+
+/*2nd Page*/
+
+#bac2{
+    min-height: 100vh;
+    background-color: #FFC375;
+    padding: 5% 20%;
+    display: none;
+}
+
+#container2{
+    min-height: 90vh;
+    display: grid;
+    grid-template:1.5fr 1fr 1fr/1fr 1fr 1fr;    
+    gap: 10px;    
+}
+
+/*Cover photo and title*/
+#first2{
+    background-image:url('../../resources/pics/cover2.jpg');
+    background-size: cover;
+    grid-area: 1/1/span 1/span 3;
+    opacity: 0.9;
+    display: grid;
+    grid-template: 1fr/1fr 1fr 1fr;
+    gap: 10px;    
+}
+#first2 .content{
+    background-color: white;
+    margin-left: 0px;
+    opacity: 0.9;
+    grid-area: 1fr/1fr/1fr/1fr;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+#second2{
+    background-image:url('../../resources/pics/Dessert.jpg');
+    background-size: cover;
+    background-position:center; 
+    grid-area: 2/1/span 1/span 2;
+}
+
+#third2{
+    background-color:rgb(83, 83, 83);   
+    grid-area: 2/3/span 1/span 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(232, 251, 225);
+}
+#third2 p{
+    font-family: "Palatino", serif;
+    font-style: italic;
+}
+
+#fourth2{
+    background-color:rgb(83, 83, 83);
+    grid-area: 3/1/span 1/span 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(232, 251, 225);
+}
+
+#fourth2 p{
+    font-family: "Palatino", serif;
+    font-style: italic;
+}
+
+#fifth2{
+    background-image:url('../../resources/pics/Coffee.jpg');
+    background-size: cover;
+    background-position:center;
+    grid-area: 3/2/span 1/span 2;
+}
