@@ -2,7 +2,7 @@ html{
     font-size: 16px;
     color: black;
     background-color: rgb(33, 36, 38);
-
+    font-family: 'cursive', serif;
 }
 
 .content h1{
@@ -217,85 +217,6 @@ header .content{
     background-color: rgb(54, 53, 53);
 }
 
-
-/*2nd Page*/
-
-#bac2{
-    min-height: 100vh;
-    background-color: #FFC375;
-    padding: 5% 20%;
+#buttonB{
     display: none;
-}
-
-#container2{
-    min-height: 90vh;
-    display: grid;
-    grid-template:1.5fr 1fr 1fr/1fr 1fr 1fr;    
-    gap: 10px;    
-}
-
-/*Cover photo and title*/
-#first2{
-    background-image:url('../../resources/pics/cover2.jpg');
-    background-size: cover;
-    grid-area: 1/1/span 1/span 3;
-    opacity: 0.9;
-    display: grid;
-    grid-template: 1fr/1fr 1fr 1fr;
-    gap: 10px;    
-}
-#first2 .content{
-    background-color: white;
-    margin-left: 0px;
-    opacity: 0.9;
-    grid-area: 1fr/1fr/1fr/1fr;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-
-#second2{
-    background-image:url('../../resources/pics/Dessert.jpg');
-    background-size: cover;
-    background-position:center; 
-    grid-area: 2/1/span 1/span 2;
-}
-
-#third2{
-    background-color:rgb(83, 83, 83);   
-    grid-area: 2/3/span 1/span 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: rgb(232, 251, 225);
-}
-#third2 p{
-    font-family: "Palatino", serif;
-    font-style: italic;
-}
-
-#fourth2{
-    background-color:rgb(83, 83, 83);
-    grid-area: 3/1/span 1/span 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: rgb(232, 251, 225);
-}
-
-#fourth2 p{
-    font-family: "Palatino", serif;
-    font-style: italic;
-}
-
-#fifth2{
-    background-image:url('../../resources/pics/Coffee.jpg');
-    background-size: cover;
-    background-position:center;
-    grid-area: 3/2/span 1/span 2;
 }
