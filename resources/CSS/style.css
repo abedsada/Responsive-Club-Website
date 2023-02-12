@@ -49,6 +49,7 @@ html{
 header{
     width: 100%;
     position: fixed;
+    z-index: 20;
 }
 header .content{
     display: flex;
@@ -63,7 +64,6 @@ header .content{
     font-weight: bolder;
     font-size: 23px;
     text-decoration: none;
-    z-index: 10;
 }
 
 #Slogo span{
@@ -73,6 +73,9 @@ header .content{
 }
 
 @media only screen and (max-width: 460px){
+    header{
+        position: static;
+    }
     #Slogo span{
         display: none;
     }
@@ -87,6 +90,7 @@ header .content{
     min-height: 100vh;
     padding: 5% 20%;
     display: block;
+    z-index: 0;
 }
 
 /*Container*/
@@ -197,6 +201,12 @@ header .content{
         grid-area: 3/3/span 1/span 2;
     }
 }
+
+@media only screen and (max-width: 460px) {
+    #bac{
+        padding: 5%;
+    }
+}
 /*Next Button*/
 .FooterBar{
     display: flex;
@@ -220,4 +230,10 @@ header .content{
 
 #buttonB{
     display: none;
+}
+@media only screen and (max-width: 460px) {
+    .Button{
+        margin-top: 5%;
+        padding: 2%;
+    }
 }
