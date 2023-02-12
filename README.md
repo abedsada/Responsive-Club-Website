@@ -15,4 +15,4 @@ In this project, you’ll be building your own club group page that will dynamic
 * This is an Off-Platform Project which was created using Visual Studio Code and Chrome DevTools.
 * https://unsplash.com was the main resource for the images.
 
-You can see the project thorugh this link: https://abedsada.github.io/
+You can see the project thorugh this link: https://abedsada.github.io/Responsive-Club-Website/
