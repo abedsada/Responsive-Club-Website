@@ -197,22 +197,26 @@ header .content{
     }
 }
 /*Next Button*/
-#button{
+.FooterBar{
+    display: flex;
+    justify-content: space-between;    
+}
+.Button{
     margin-top: 1%;
     background-color: rgb(83, 83, 83);
-    width: 50px;
-    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 1%;
 }
-#button a{
+.Button a{
     text-decoration: none;
     color: rgb(232, 251, 225);
 } 
-#button:hover{
+.Button:hover{
     background-color: rgb(54, 53, 53);
 }
+
 
 /*2nd Page*/
 
@@ -294,21 +298,4 @@ header .content{
     background-size: cover;
     background-position:center;
     grid-area: 3/2/span 1/span 2;
-}
-
-#buttonB{
-    margin-top: 1%;
-    background-color: rgb(83, 83, 83);
-    width: 50px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#buttonB a{
-    text-decoration: none;
-    color: rgb(232, 251, 225);
-} 
-#buttonB:hover{
-    background-color: rgb(54, 53, 53);
 }
